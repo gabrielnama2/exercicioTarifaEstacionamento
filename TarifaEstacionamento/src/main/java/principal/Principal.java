@@ -4,11 +4,10 @@ import business.Cliente;
 import business.VeiculoEstacionado;
 
 public class Principal {
-
     public static void main(String[] args) {
         Cliente motorista = new Cliente("Motorista", true);
         Cliente motoboy = new Cliente("Motoboy", false);
-        VeiculoEstacionado carro = new VeiculoEstacionado(motorista, "carro", 10);
+        VeiculoEstacionado carro = new VeiculoEstacionado(motorista, "carro", 25);
         VeiculoEstacionado moto = new VeiculoEstacionado(motoboy, "moto", 5);
         CalculaTarifaService calculaTarifa = new CalculaTarifaService();
         calculaTarifa.calcular(carro);
